@@ -4,6 +4,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 .hero {
@@ -21,14 +23,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .hero-overlay h1 {
@@ -94,12 +97,13 @@ footer {
   margin-top: 3rem;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  overflow-x: hidden; /* prevent horizontal scroll */
-  -webkit-font-smoothing: antialiased;
+.scroll-down {
+  font-size: 2rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
 }
 
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
