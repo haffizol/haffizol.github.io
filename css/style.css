@@ -12,7 +12,7 @@ body {
   background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/DSC06361_1.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh; /* only half the screen */
+  height: 20vh; /* only half the screen */
   position: relative;
   color: white;
   text-align: center;
