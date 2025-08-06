@@ -100,14 +100,10 @@ nav a:hover {
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .card ul {
