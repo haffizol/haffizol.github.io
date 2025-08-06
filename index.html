@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="hero">
     <div class="hero-overlay">
       <h1>Muhammad Haffizol Bin Suffian</h1>
       <p>Mechatronic Engineer | Bachelor of Mechatronic Engineering Technology with Honours</p>
-      <div class="scroll-down">⬇️</div>
     </div>
   </header>
-  
+
   <nav>
     <a href="index.html">Home</a>
     <a href="experience.html">Experience</a>
@@ -32,19 +32,6 @@
   <footer>
     <p>&copy; 2025 Muhammad Haffizol</p>
   </footer>
-
-<script>
-  window.addEventListener("scroll", function () {
-    const overlay = document.querySelector(".hero-overlay");
-    const scrollTop = window.scrollY;
-    const fadePoint = 300; // Adjust how fast it fades
-    let opacity = 1 - scrollTop / fadePoint;
-
-    // Clamp opacity between 0 and 1
-    opacity = Math.max(0, Math.min(1, opacity));
-    overlay.style.opacity = opacity;
-  });
-</script>
 
 </body>
 </html>
