@@ -18,7 +18,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000; /* fallback background */
-  height: 70vh; /* take 50% of screen height */
+  height: 80vh; /* take 50% of screen height */
   min-height: 300px; /* don't get too small on short screens */
   max-height: 540px; /* never exceed original image height */
   display: flex;
