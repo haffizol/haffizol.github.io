@@ -13,15 +13,21 @@ h2 {
 }
 
 .hero {
+  linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
   background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/Draft2.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain; /* prevent stretching/blurring */
   background-repeat: no-repeat;
-  height: 540px;
-  position: relative;
-  color: white;
+  background-position: center;
+  background-color: #000; /* fallback background */
+  height: 50vh; /* take 50% of screen height */
+  min-height: 300px; /* don't get too small on short screens */
+  max-height: 540px; /* never exceed original image height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: none;
+  color: white;
 }
 
 .hero-overlay {
