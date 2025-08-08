@@ -13,7 +13,6 @@ h2 {
 }
 
 .hero {
-  linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
   background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/Draft2.jpg");
   background-size: contain; /* prevent stretching/blurring */
   background-repeat: no-repeat;
