@@ -13,21 +13,20 @@ h2 {
 }
 
 .hero {
+  position: relative;
   background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/Draft2.jpg");
-  background-size: contain; /* prevent stretching/blurring */
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-color: #000; /* fallback background */
-  height: 80vh; /* take 50% of screen height */
-  min-height: 300px; /* don't get too small on short screens */
-  max-height: 540px; /* never exceed original image height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-repeat: no-repeat;
   color: white;
+  text-align: center;
+  
+  /* Maintain 1920x540 ratio = 28.125% */
+  width: 100%;
+  padding-top: 28.125%; /* (540 / 1920) * 100% */
+  overflow: hidden;
 }
+
 
 .hero-overlay {
   position: absolute;
