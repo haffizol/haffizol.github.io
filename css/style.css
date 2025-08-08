@@ -12,15 +12,16 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Hero Section */
 .hero {
-  background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/DRAFT%201.jpg");
+  background-image: url("https://raw.githubusercontent.com/haffizol/haffizol.github.io/refs/heads/main/Image/Draft2.jpg");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  background-repeat: no-repeat;
+  height: 540px;
   position: relative;
   color: white;
   text-align: center;
+  border: none;
 }
 
 .hero-overlay {
